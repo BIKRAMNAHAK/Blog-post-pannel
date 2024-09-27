@@ -13,9 +13,13 @@ if you are in the home page there you can see the sidebar there dashbord , my bl
 
 if you want to post you blog:-
   1 . login /signup 
-  2 . click to create new blog
-  3 . fill the form and post
-  4 . go to dashbord / all blogs
+ 
+ 2 . click to create new blog
+ 
+ 3 . fill the form and post
+ 
+ 4 . go to dashbord / all blogs
+
 you can see your blog added successfully
 
 
