@@ -5,7 +5,9 @@ const defaultController = async (req, res) => {
         const blogs = await blog_Models.find({});
         const bloggers = await username.find({});
     
-        res.render('index', { allBlogs: blogs, bloggers: bloggers });
+        const loggedInUser = req.user; 
+
+    res.render('index', { allBlogs: blogs, bloggers: bloggers, loggedInUser: loggedInUser });
 
 };
 

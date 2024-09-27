@@ -10,19 +10,20 @@ const addBlogFormController = (req, res) => {
 const getBlogController = async (req, res) => {
     const blogs = await blog_Models.find({});
     const bloggers = await username.find({});
+    const loggedInUser = req.user; 
 
-    console.log("Blogs:", blogs);
-    console.log("Bloggers:", bloggers);
+    console.log("Blogs:", loggedInUser);
+  
 
-    res.render('allBlogs', { blogs: blogs, bloggers: bloggers });
+    res.render('allBlogs', { blogs: blogs, bloggers: bloggers , loggedInUser: loggedInUser });
 }
 
 const myBlogerController = async (req, res) => {
     const bloggerEmail = req.user.email;
     const bloggersData = await blog_Models.find({ userEmail: bloggerEmail });
-    console.log("bloggersData", bloggersData);
 
-    res.render('my_blogs', { blogs: bloggersData });
+    const loggedInUser = req.user; 
+    res.render('my_blogs', { blogs: bloggersData,loggedInUser: loggedInUser  });
 }
 
 

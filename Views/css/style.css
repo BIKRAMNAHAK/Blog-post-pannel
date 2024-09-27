@@ -6,19 +6,25 @@ body {
 
 header {
   background-color: #343a40;
+  border-bottom: 1px solid white;
 }
 
 .sidebar {
   height: 100vh;
   background-color: #007bff;
+  padding-top: 20px;
+  color: white;
 }
 
-.sidebar .nav-link.active {
-  background-color: #0056b3;
+.sidebar .nav-link {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
 }
 
 .sidebar .nav-link:hover {
   background-color: #0056b3;
+  border-radius: 10px;
 }
 
 .main-content {
@@ -52,4 +58,10 @@ header {
   position: fixed;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.profile{
+ display: flex;
+ gap: 10px;
+ align-items: center;
 }
