@@ -11,8 +11,11 @@ const isAuth = require('../meddlewere/midlewereAuth')
 
 //Routing area
 
-//Home router
+//Home  and userProfile router
 router.get('/',isAuth,controller.defaultController);
+router.get('/userProfile' ,isAuth, controller.userProfileController)
+router.get('/change-password',isAuth , controller.changePassowrdController)
+router.post('/change_pass' , controller.updatePassController)
 
 //bloging add
 router.get('/addForm',isAuth, BlogController.addBlogFormController)
@@ -31,6 +34,8 @@ router.post('/signuppost',registerController.userRegFormPostController)
 router.get('/login',loginController.userLoginFormController)
 router.post('/login', passport.authenticate('local', { successRedirect: '/', failureRedirect: '/login' }))
 router.get('/logout' ,loginController.userLogoutController)
+router.get('/forgot-password',loginController.forgetPasswordController )
+
 
 
 module.exports = router;

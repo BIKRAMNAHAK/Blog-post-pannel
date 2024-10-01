@@ -16,4 +16,10 @@ const userLogoutController =async (req , res) =>{
   })
 }
 
-module.exports = {userLoginFormController  , userLogoutController}
+const forgetPasswordController =(req , res) =>{
+  res.render('forget_password')
+}
+
+
+
+module.exports = {userLoginFormController  , userLogoutController , forgetPasswordController }
