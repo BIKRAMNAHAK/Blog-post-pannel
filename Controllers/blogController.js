@@ -1,6 +1,5 @@
 const blog_Models = require('../Modules/BlogModels')
 const username = require('../Modules/Authontication');
-const { render } = require('ejs');
 const fs = require('fs')
 
 const addBlogFormController = (req, res) => {
@@ -11,10 +10,6 @@ const getBlogController = async (req, res) => {
     const blogs = await blog_Models.find({});
     const bloggers = await username.find({});
     const loggedInUser = req.user; 
-
-    console.log("Blogs:", loggedInUser);
-  
-
     res.render('allBlogs', { blogs: blogs, bloggers: bloggers , loggedInUser: loggedInUser });
 }
 
@@ -48,7 +43,7 @@ const editBlogController = async (req, res) => {
 
     const blogId = req.params.id;
     const editBlog = await blog_Models.findById(blogId)
-    console.log("blogId", editBlog);
+
 
     res.render('edit_blogs', { editBlog })
 }
