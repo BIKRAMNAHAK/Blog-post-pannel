@@ -15,6 +15,7 @@ if you are in the home page there you can see the sidebar there dashbord , my bl
 
 **if you want to post you blog:-
 **
+
   1 . login /signup 
  
  2 . click to create new blog
@@ -38,10 +39,15 @@ go to dashbord , then click to my Blogs in sidebar , there you can see your all 
 
 **updated feature in this project: -**
 1 . password change feature is updated in this project .  user can be chanege to her passowrd by following some staps
+
       1 . login / signup
+      
       2 . go to profile form dashbord
+      
       3 . clik to link for change your password
+      
       4 . go to dashbord and click to logout and retry to login with your updated password
+      
     
 
 last you can do logout form dashbord
