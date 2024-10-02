@@ -16,17 +16,20 @@
     <div class="container">
         <div class="profile-container">
             <img src="https://via.placeholder.com/150" alt="User Profile Picture" class="profile-pic">
-            <h2>
-                <label class="fs-6 fw-bold">Name:</label>
-                <%= userDetails.name %>
-            </h2>
+            <div class="d-flex align-items-center gap-4">
+                <h2>
+                    <label class="fs-6 fw-bold">Name:</label>
+                    <%= userDetails.name %>
+                </h2>
+                <a href="/change_profile/<%= userDetails._id %>" class="name-change text-decoration-none">Change Name</a>
+            </div>
 
             <div class="user-info">
                 <label>Email:</label>
                 <span id="user-email">
                     <%= userDetails.email %>
                 </span>
-                <a href="#" class="edit-link">Change Email</a>
+              
             </div>
 
             <div class="user-info">
@@ -34,7 +37,7 @@
                 <span id="user-phone">
                     <%= userDetails.phone %>
                 </span>
-                <a href="#" class="edit-link">Change Phone Number</a>
+                <a href="/change_profile/<%= userDetails._id %>" class="edit-link text-decoration-none">Change Phone Number</a>
             </div>
 
             <div class="user-info">

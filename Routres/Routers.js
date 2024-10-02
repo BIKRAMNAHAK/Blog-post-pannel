@@ -7,15 +7,19 @@ const BlogController = require('../Controllers/blogController')
 const upload = require('../Confring/imageUplode')
 const passport = require('../Confring/passport_confi')
 const isAuth = require('../meddlewere/midlewereAuth')
-
+const userProfile = require('../Controllers/userProfileController')
 
 //Routing area
 
 //Home  and userProfile router
 router.get('/',isAuth,controller.defaultController);
 router.get('/userProfile' ,isAuth, controller.userProfileController)
-router.get('/change-password',isAuth , controller.changePassowrdController)
-router.post('/change_pass' , controller.updatePassController)
+
+//userProfile controller
+router.get('/change-password',isAuth , userProfile.changePassowrdController)
+router.post('/change_pass' ,isAuth , userProfile.updatePassController)
+router.get('/change_profile/:id',isAuth ,userProfile.getChangeProfile )
+router.post('/change_name_phone/:id',isAuth , userProfile.updateInfoController)
 
 //bloging add
 router.get('/addForm',isAuth, BlogController.addBlogFormController)

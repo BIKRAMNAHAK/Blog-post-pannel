@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forgot Password</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/forget_pass.css">
+</head>
+<body>
+	<div class="form-container vh-100">
+		<div class="card p-4 bg-light">
+			<h3 class="text-center mb-4">Change Name and Phone number</h3>
+			<form method="post" action="/change_name_phone/<%=userInfo._id %>">
+                <div class="mb-3"></div>
+					<label for="Name" class="form-label">Name : </label>
+					<input type="text" class="form-control" name="new_name" value="<%= userInfo.name %>" placeholder="Enter your New Name" required>
+
+                    <label for="phone" class="form-label">phone : </label>
+					<input type="tel" class="form-control" name="new_phone" value="<%= userInfo.phone %>" placeholder="Enter your New phone Number " required>
+
+
+                    <button type="submit" class="btn btn-primary mt-5">update</button>
+                    <p class="text-center mt-3"><a href="/" class="text-decoration-none">Back to Home</a></p>
+				</div>
+			
+			</form>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS (Optional for Bootstrap features) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
