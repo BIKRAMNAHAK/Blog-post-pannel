@@ -1,5 +1,7 @@
 ![Screenshot (215)](https://github.com/user-attachments/assets/991d7bf0-97d3-4925-a78c-2045a70a29b2)
 ![Screenshot (216)](https://github.com/user-attachments/assets/efd329a1-6d61-4e59-b0db-1a2b1a97eccd)
+![Screenshot (230)](https://github.com/user-attachments/assets/95dc9e03-532a-4c1b-8e62-62d89e680660)
+
 
 
 **subject - This is Blogging website , here user can 
@@ -11,7 +13,8 @@ onec you signup successfully then you can login using by email and password and 
 if you are in the home page there you can see the sidebar there dashbord , my blogs , all blogs ,profile , and logout opstion can be use 
 
 
-if you want to post you blog:-
+**if you want to post you blog:-
+**
 
   1 . login /signup 
  
@@ -24,7 +27,7 @@ if you want to post you blog:-
 you can see your blog added successfully
 
 
-if you want to Edit or Delete your post :-
+**if you want to Edit or Delete your post :-**
   1. go to dashbord and click to my blogs in the sidebar
   2. you can see you all the posts
   3. which post are you want to Edit or Delete , click this posts Edit button or delete Button
@@ -33,6 +36,19 @@ if you want to Edit or Delete your post :-
 go to dashbord , then click to my Blogs in sidebar , there you can see your all posts ,there which post are you want to delete form you blogs there delete button you  can click
 
 *Note : - you can't be delete or edit all the posts , this opsion posible for user only ,thay are can be use edit and delete her own post
+
+**updated feature in this project: -**
+1 . password change feature is updated in this project .  user can be chanege to her passowrd by following some staps
+
+      1 . login / signup
+      
+      2 . go to profile form dashbord
+      
+      3 . clik to link for change your password
+      
+      4 . go to dashbord and click to logout and retry to login with your updated password
+      
+    
 
 last you can do logout form dashbord
 
