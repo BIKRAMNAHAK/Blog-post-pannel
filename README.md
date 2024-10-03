@@ -44,8 +44,11 @@ go to dashbord , then click to my Blogs in sidebar , there you can see your all 
       4 . go to dashbord and click to logout and retry to login with your updated password
 
 **Recently update Features**
-2 . Name And Phone number user can be change after login 
-3 . password forget feature is updated
+
+1 . Name And Phone number user can be change after login 
+
+2 . password forget feature is updated
+
 
 last you can do logout form dashbord
 
