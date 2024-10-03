@@ -45,8 +45,6 @@ const updateInfoController = async (req , res) => {
     userRec.name = req.body.new_name || userRec.name
     userRec.phone = req.body.new_phone || userRec.phone
     const UpdateRec = await username.findByIdAndUpdate(id , userRec , {new : true})
-    console.log("update info" , UpdateRec);
-    
     res.redirect('/')
 }
 

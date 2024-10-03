@@ -38,8 +38,11 @@ router.post('/signuppost',registerController.userRegFormPostController)
 router.get('/login',loginController.userLoginFormController)
 router.post('/login', passport.authenticate('local', { successRedirect: '/', failureRedirect: '/login' }))
 router.get('/logout' ,loginController.userLogoutController)
-router.get('/forgot-password',loginController.forgetPasswordController )
 
-
-
+// forget Password
+router.get('/forgot-password',loginController.forgetPasswordController );
+router.post('/confUser',loginController.chackUserController );
+router.get('/otpValidate/:id', loginController.getOtpValidatePage)
+router.post('/chackOtp/:id', loginController.otpValidateController );
+router.post('/reset_pass/:id',loginController.resetPassController)
 module.exports = router;

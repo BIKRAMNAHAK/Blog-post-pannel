@@ -113,3 +113,8 @@ input[type="submit"]:hover {
 	color: white;
 }
 
+.btn-1{
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
