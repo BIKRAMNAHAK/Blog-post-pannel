@@ -15,15 +15,10 @@ if you are in the home page there you can see the sidebar there dashbord , my bl
 
 **if you want to post you blog:-
 **
-
-  1 . login /signup 
- 
- 2 . click to create new blog
- 
- 3 . fill the form and post
- 
- 4 . go to dashbord / all blogs
-
+   1 . login /signup 
+   2 . click to create new blog
+   3 . fill the form and post
+   4 . go to dashbord / all blogs
 you can see your blog added successfully
 
 
@@ -47,8 +42,13 @@ go to dashbord , then click to my Blogs in sidebar , there you can see your all 
       3 . clik to link for change your password
       
       4 . go to dashbord and click to logout and retry to login with your updated password
-      
-    
+
+**Recently update Features**
+
+1 . Name And Phone number user can be change after login 
+
+2 . password forget feature is updated
+
 
 last you can do logout form dashbord
 
