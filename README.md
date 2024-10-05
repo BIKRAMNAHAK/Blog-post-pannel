@@ -11,7 +11,7 @@ be post there blogs **
 start form simple command you type in vs code tarminal
   1. commnad - "npm start"
   2. you can see the path 'http://localhost : ....?'
-  3. copy this path and pest in broweser
+  3. copy this path and paste in broweser
 then //
 if have an account then you can login dairectly otherwise click to sign up 
 onec you signup successfully then you can login using by email and password and you can reach to home page 
