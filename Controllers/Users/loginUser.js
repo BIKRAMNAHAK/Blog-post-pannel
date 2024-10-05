@@ -1,8 +1,21 @@
 const users = require('../../Modules/Authontication')
 const otpGenerator = require('otp-generator')
 const bcrypt = require('bcrypt')
+const nodemailer = require('nodemailer')
 
 let myOtp = null
+
+const transporter = nodemailer.createTransport({
+  host : "blog-pannel.gmail.com",
+  port : 587,
+  secure : true,
+  service : 'gmail',
+  auth: {
+    user : 'bikramnahak9714@gmail.com',
+    pass: 'xlea ehha ksml mefy'
+  }
+
+})
 
 const userLoginFormController = (req, res) => {
   res.render('login')
@@ -29,10 +42,31 @@ const chackUserController =async (req, res) => {
     const user = await users.findOne({ email: email });
 
     if(user){
+        
       let otp = otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false , lowerCaseAlphabets : false});
       myOtp = otp
       console.log("otp" ,otp);
+
+      let mailOpt = {
+        form: 'bikramnahak9714@gmail.com',
+        to : user.email,
+        subject : 'Reset password OTP',
+        text : `Your OTP is ${otp}`
+      }
+
+      transporter.sendMail(mailOpt , (err , info)=>{
+        if (err) {
+          console.log("error" , err);
+          
+        }else{
+          console.log("info" , info);
+          
+        }
+      })
+
       res.redirect(`/otpValidate/${user._id}`);
+
+
       
     }else{
       res.redirect('/signup')
